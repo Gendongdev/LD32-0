@@ -8,7 +8,7 @@ public class BoxSceneItem : SceneItem {
 	{
 		if (m_state == 0)
 		{
-			if (item is OctAndLianaInventoryItem)
+			if (item is OctoropeInventoryItem)
 			{
 				++m_state;
 				// TODO

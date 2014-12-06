@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour {
 
 		CheckInput ();
 
-		Debug.Log (Vector3.Distance (m_positionToGo, transform.position));
 		if (Mathf.Abs(m_positionToGo.x - transform.position.x) > 0.5f) 
 		{
 			Vector3 dir = Vector3.zero;

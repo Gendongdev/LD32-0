@@ -16,7 +16,7 @@ public class InventoryMenu : MonoBehaviour
 		set { m_animator.SetBool ("expanded", value);}
 	}
 
-	public void Awake()
+	public void Start()
 	{
 		m_animator = GetComponent<Animator>();
 		m_inventoryManager = GameManager.GetInstance().GetComponent<Inventory> ();
@@ -60,7 +60,6 @@ public class InventoryMenu : MonoBehaviour
 	public void ToggleExpanded()
 	{
 		Expanded = !Expanded;
-		m_cursorManager.Item = null; // Clear selected item too
 	}
 
 	public void SlotClicked(Button slot)

@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class BoxSceneItem : SceneItem {
-	int m_state;
 
 	public override void Use (InventoryItem item)
 	{

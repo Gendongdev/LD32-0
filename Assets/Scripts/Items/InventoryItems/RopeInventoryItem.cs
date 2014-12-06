@@ -3,15 +3,15 @@ using System.Collections;
 
 public class RopeInventoryItem : InventoryItem
 {
-	public OctoropeInventoryItem m_octoropeItem;
-
 	public override void Use (InventoryItem item)
 	{
 		if(item is OctopusInventoryItem)
 		{
 			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(this);
-			GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_octoropeItem);
+			Object prefab = Resources.Load("Prefabs/Octorope");
+			GameObject octorope = Instantiate(prefab) as GameObject;
+			GameManager.GetInstance().GetComponent<Inventory>().AddItem(octorope.GetComponent<InventoryItem>());
 			return;
 		}
 

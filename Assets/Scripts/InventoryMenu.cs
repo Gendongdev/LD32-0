@@ -59,6 +59,7 @@ public class InventoryMenu : MonoBehaviour
 	public void ToggleExpanded()
 	{
 		Expanded = !Expanded;
+		m_cursorManager.Item = null; // Clear selected item too
 	}
 
 	public void SlotClicked(Button slot)

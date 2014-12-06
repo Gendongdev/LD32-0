@@ -9,9 +9,9 @@ public class RopeInventoryItem : InventoryItem
 		{
 			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(this);
-			GameObject prefab = Resources.Load("Prefabs/Octorope");
-			GameObject octorope = Instantiate(prefab);
-			GameManager.GetInstance().GetComponent<Inventory>().AddItem(octorope);
+			Object prefab = Resources.Load("Prefabs/Octorope");
+			GameObject octorope = Instantiate(prefab) as GameObject;
+			GameManager.GetInstance().GetComponent<Inventory>().AddItem(octorope.GetComponent<InventoryItem>());
 			return;
 		}
 

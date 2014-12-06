@@ -4,7 +4,6 @@ using System.Collections;
 
 public class InventoryMenu : MonoBehaviour
 {
-	public GameObject m_gameController;
 	public Button[] m_slots;
 
 	private Animator m_animator;
@@ -20,8 +19,8 @@ public class InventoryMenu : MonoBehaviour
 	public void Awake()
 	{
 		m_animator = GetComponent<Animator>();
-		m_inventoryManager = m_gameController.GetComponent<Inventory> ();
-		m_cursorManager = m_gameController.GetComponent<Cursor> ();
+		m_inventoryManager = GameManager.GetInstance().GetComponent<Inventory> ();
+		m_cursorManager = GameManager.GetInstance().GetComponent<Cursor> ();
 	}
 
 	public void Update()

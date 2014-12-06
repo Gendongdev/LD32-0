@@ -3,7 +3,6 @@ using System.Collections;
 
 public abstract class InteractiveItem : MonoBehaviour
 {
-	public Inventory m_inventory;
 	public string m_description;
 
 	public abstract void Use(InventoryItem item);

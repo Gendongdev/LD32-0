@@ -7,17 +7,21 @@ public class GameManager : MonoBehaviour {
     public Dial ChannelDial;
     public Dial InputDial;
 
+	static GameManager m_instance;
+
     private int _currenChannel = 1;
 
 
-	// Use this for initialization
-	void Start () {
-	
+	public static GameManager GetInstance()
+	{
+		return m_instance;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void Awake()
+	{
+		if (m_instance != null)
+			Destroy(m_instance);
+		m_instance = this;
 	}
 
     public void UpdateDials()

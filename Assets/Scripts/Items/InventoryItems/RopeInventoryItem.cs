@@ -9,9 +9,9 @@ public class RopeInventoryItem : InventoryItem
 	{
 		if(item is OctopusInventoryItem)
 		{
-			m_inventory.RemoveItem(item);
-			m_inventory.RemoveItem(this);
-			m_inventory.AddItem(m_octoropeItem);
+			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
+			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(this);
+			GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_octoropeItem);
 			return;
 		}
 

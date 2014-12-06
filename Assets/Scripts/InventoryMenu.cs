@@ -43,6 +43,8 @@ public class InventoryMenu : MonoBehaviour
 
 	private void AssignItemToSlot(Button slot, InventoryItem item)
 	{
+		slot.image.sprite = item.m_sprite;
+
 		// TODO Change texture to that of the item
 		if(item == m_cursorManager.Item)
 			slot.image.color = Color.green; // FIXME Test

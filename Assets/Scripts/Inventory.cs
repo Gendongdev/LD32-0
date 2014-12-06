@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
 
 	public void Start()
 	{
+		/*
 		// FIXME Test
 		m_items = new InventoryItem[2];
 		GameObject g1 = new GameObject ();
@@ -16,6 +17,7 @@ public class Inventory : MonoBehaviour
 		GameObject g2 = new GameObject ();
 		m_items[1] = g2.AddComponent<InventoryItem> ();
 		// FIXME ¬Test
+		*/
 	}
 
 	public void AddItem(InventoryItem item)

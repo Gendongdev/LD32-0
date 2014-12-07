@@ -32,6 +32,7 @@ public class Cursor : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, float.PositiveInfinity, LayerMask.GetMask("InteractiveObject"));
             if (hit != null && hit.transform != null)
             {
+                Debug.Log("boxs");
                 _player.Move(hit.transform.gameObject.GetComponent<SceneItem>(), Input.GetMouseButtonDown(1) || Item != null);
             }
             else

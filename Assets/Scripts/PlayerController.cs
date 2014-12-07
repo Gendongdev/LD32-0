@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour {
                     _cursorManager.Item = null;
                 }
                 else
-                    Debug.Log("Look");
+                    _useItem.Look();
                         
             }
 

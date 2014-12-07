@@ -10,6 +10,8 @@ public class MessageUI : MonoBehaviour
 		{ "Sample original text 1", "Sample translated text 1" },
 		{ "Sample original text 2", "Sample translated text 2" },
 		{ "Sample original text 3", "Sample translated text 3" },
+        { "archiver_text", "This archiver is awesome" },
+
 	};
 
 	public float m_timePerCharacter = 0.2f;

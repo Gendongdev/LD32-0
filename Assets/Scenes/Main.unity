@@ -764,7 +764,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 565323395}
   m_Layer: 0
-  m_Name: Cartoons
+  m_Name: Pirates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1258,7 +1258,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 843772044}
   - 60: {fileID: 843772043}
-  - 114: {fileID: 843772045}
   m_Layer: 9
   m_Name: Prison_Collider
   m_TagString: Untagged
@@ -1300,17 +1299,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 902278999}
   m_RootOrder: 7
---- !u!114 &843772045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 843772042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56f47e28a1ccf904fbab11163635c30d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &848332958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,7 +1627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba6a31536cfb4d4ba1567b06853b3a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speed: 3
+  m_speed: 2
 --- !u!95 &951811828
 Animator:
   serializedVersion: 3
@@ -1850,7 +1838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1173970930
 Transform:
   m_ObjectHideFlags: 0

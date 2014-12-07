@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class OctoropeInventoryItem : InventoryItem
+public class KnifeInventoryItem : InventoryItem
 {
 }

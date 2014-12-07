@@ -20,12 +20,14 @@ public class Inventory : MonoBehaviour
 		*/
 	}
 
-	public void AddItem(InventoryItem item)
+	public void AddItem(GameObject prefab)
 	{
-		if (!m_items.Contains(item))
+        GameObject item = Instantiate(prefab) as GameObject;
+        InventoryItem ii = item.GetComponent<InventoryItem>();
+		if (!m_items.Contains(ii))
 		{
 			List<InventoryItem> items = m_items.ToList ();
-			items.Add(item);
+			items.Add(ii);
 			m_items = items.ToArray();
 		}
 	}

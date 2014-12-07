@@ -2540,6 +2540,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 567e01e8b50f84b86bc8b63a6506fb59, type: 2}
+      propertyPath: m_inventoryPrefab
+      value: 
+      objectReference: {fileID: 100000, guid: bcfa1db89a934154ca324b1d38437da3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 567e01e8b50f84b86bc8b63a6506fb59, type: 2}
   m_RootGameObject: {fileID: 1376046970}
@@ -3005,6 +3009,7 @@ MonoBehaviour:
   m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
+  m_inventoryPrefab: {fileID: 100000, guid: bcfa1db89a934154ca324b1d38437da3, type: 2}
 --- !u!61 &1497382110
 BoxCollider2D:
   m_ObjectHideFlags: 0

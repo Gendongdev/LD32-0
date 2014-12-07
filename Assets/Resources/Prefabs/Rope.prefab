@@ -39,11 +39,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8061c8f64ea5b6b4c8df30c9af025795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spriteChannel1: {fileID: 21300000, guid: ab54132cdb16b47e88d4636611d65b3d, type: 3}
-  m_spriteChannel2: {fileID: 21300000, guid: ab54132cdb16b47e88d4636611d65b3d, type: 3}
-  m_spriteChannel3: {fileID: 21300000, guid: ab54132cdb16b47e88d4636611d65b3d, type: 3}
-  m_spriteChannel4: {fileID: 21300000, guid: ab54132cdb16b47e88d4636611d65b3d, type: 3}
-  m_sprite: {fileID: 21300000, guid: ab54132cdb16b47e88d4636611d65b3d, type: 3}
+  m_spriteChannel1: {fileID: 21300000, guid: b1ccd935fbeb94d41b435aa95bd5579f, type: 3}
+  m_spriteChannel2: {fileID: 21300000, guid: b1ccd935fbeb94d41b435aa95bd5579f, type: 3}
+  m_spriteChannel3: {fileID: 21300000, guid: b1ccd935fbeb94d41b435aa95bd5579f, type: 3}
+  m_spriteChannel4: {fileID: 21300000, guid: b1ccd935fbeb94d41b435aa95bd5579f, type: 3}
+  m_sprite: {fileID: 21300000, guid: b1ccd935fbeb94d41b435aa95bd5579f, type: 3}
   m_octoropePrefab: {fileID: 100000, guid: ac8b4d40ad2d84671986bd22b55ff78e, type: 2}
 --- !u!1001 &100100000
 Prefab:

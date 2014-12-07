@@ -3,9 +3,6 @@ using System.Collections;
 
 public abstract class InteractiveItem : MonoBehaviour
 {
-	public string m_description;
-
-
 	/// <summary>
 	/// Use with null is take the object. Use with a parameter is use the item with it
 	/// </summary>
@@ -46,7 +43,8 @@ public abstract class InventoryItem : InteractiveItem
 	}
 }
 
-public abstract class SceneItem : InteractiveItem {
+public abstract class SceneItem : InteractiveItem
+{
 	protected int m_state;
 	public int state
 	{
@@ -71,5 +69,10 @@ public abstract class SceneItem : InteractiveItem {
 		{
 			GetComponent<SpriteRenderer>().sprite = m_sprites[state];
 		}
+	}
+
+	public virtual void Look()
+	{
+		MessageServer.SendMessage ("What is this? I don't even.", Color.white);
 	}
 }

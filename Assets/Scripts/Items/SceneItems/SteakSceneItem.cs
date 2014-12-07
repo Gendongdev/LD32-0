@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SteakSceneItem : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+public class SteakSceneItem : SceneItem
+{
+	public override void Use(InventoryItem item)
+	{
+		if(item == null)
+		{
+			Object prefab = Resources.Load("Prefabs/Steak");
+			GameObject newItem = Instantiate(prefab) as GameObject;
+			GameManager.GetInstance().GetComponent<Inventory>().AddItem(newItem.GetComponent<InventoryItem>());
+		}
 	}
 }

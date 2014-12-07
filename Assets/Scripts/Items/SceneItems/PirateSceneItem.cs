@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class PirateSceneItem : SceneItem {
 
@@ -10,16 +11,19 @@ public class PirateSceneItem : SceneItem {
 			// Initial State
             if (item is TigerInventoryItem)
             {
-
-                // TODO
-                // Play animation for loving the kitten
-
                 base.Use(item);
                 GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 
                 ++m_state;
                 // Activates the canyon
                 m_ItemToActivate.state++;
+
+				foreach(Transform t in transform)
+				{
+					t.gameObject.SetActive(true);
+				}
+
+				transform.localScale = new Vector3(-1, 1, 1);
             }
             else
             {

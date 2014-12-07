@@ -32,6 +32,15 @@ public class MessageUI : MonoBehaviour
 
 		// Game items
 		{ "SCENE_ITEM_DESCRIPTION_KNIFE", "A shiny sharp knife." },
+		{ "SCENE_ITEM_DESCRIPTION_BOSS_ALIVE", "The boss is flying over there with his jetpack." },
+		{ "SCENE_ITEM_DESCRIPTION_BOSS_DEAD", "He's been incapacitated by that big explosion." },
+		{ "SCENE_ITEM_DESCRIPTION_BOSS_LOOTED", "He's been incapacitated by that big explosion." },
+		{ "SCENE_ITEM_DESCRIPTION_BOSS_GLITCHED", "'Yeah, I'm glitched, but at least you can't see through my face!'" },
+		{ "SCENE_ITEM_INTERACT_BOSS_ALIVE", "'Ha ha ha! You can't defeat me!'" },
+		{ "SCENE_ITEM_INTERACT_BOSS_DEAD", "I'll take his jetpack." },
+		{ "SCENE_ITEM_INTERACT_BOSS_NO_LIGHTER", "I need something to fire the cannon." },
+
+
 	};
 
 	public float m_timePerCharacter = 0.2f;

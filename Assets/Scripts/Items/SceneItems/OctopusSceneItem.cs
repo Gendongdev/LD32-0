@@ -17,7 +17,11 @@ public class OctopusSceneItem : PickableSceneItem {
                 // Play animation for loving the kitten
 
                 base.Use(item);
-                transform.GetChild(0).gameObject.SetActive(false);
+                transform.parent.gameObject.renderer.enabled = false;
+
+                foreach (Transform child in transform.parent)
+                    child.gameObject.renderer.enabled = true;
+
                 GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 
                 ++m_state;

@@ -32,6 +32,23 @@ public class MessageUI : MonoBehaviour
 
 		// Game items
 		{ "SCENE_ITEM_DESCRIPTION_KNIFE", "A shiny sharp knife." },
+
+        // Pirate scene
+        { "song_text", "Yo ho, yo ho, a pirate's life for me"},
+        { "lookPirate_text", "He seems very aware of the canyon"},
+        { "lookPirateSing_text", "The pirate is singing"},
+        { "lookLoveCat_text", "He will be entertaining a good time"},
+        { "pirate_text", "Ey! What do you do here?"},
+        { "cat_text", "I love cats"},
+        { "inside_text", "Commotion is heard inside."}, 
+        { "barrel_text", "It is a empty barrel"},
+        { "canyon_text", "The pirate is guarding the canyon. I can't catch it"},
+        { "lookCanyon_text", " It is a powerful weapon"},
+        { "lookGrid_text", "There are a lot of fish inside"},
+        { "lookOctopus_text", "Perhaps could manufacture a octorope with it"},
+        { "grid_text", "I search on the grid"},
+        { "lookGetCanyon_text", "Nobody watches it"}
+
 	};
 
 	public float m_timePerCharacter = 0.2f;

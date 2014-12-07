@@ -10,14 +10,15 @@ public class MessageUI : MonoBehaviour
 		{ "Sample original text 1", "Sample translated text 1" },
 		{ "Sample original text 2", "Sample translated text 2" },
 		{ "Sample original text 3", "Sample translated text 3" },
-        { "prisonArchiver_text", "This archiver is awesome" },
-        { "prisonArchiverInteract_text", "Didn't move" },
-        { "prisonDoor_text","I think I could not open this door"},
-        { "prisonDoorInteract_text","It's closed"},
-        { "prisonPoster_text","HE is awesome"},
-        { "prisonBoxState1_text", "I think I could use an octorope with that"},
-        { "prisonBoxState2_text" , "It seems to have something inside"},
-        { "prisonWindow_text", "It's too high. I need something in order to escape"},
+
+        { "prisonArchiver_text", "It's full of Wii U games... Useless." },
+        { "prisonArchiverInteract_text", "I can't move it." },
+        { "prisonDoor_text", "A closed wooden door." },
+		{ "prisonDoorInteract_text", "I can hear my captors at the other side." },
+		{ "prisonPoster_text", "HE is awesome." },
+        { "prisonBoxState1_text", "I think I could use an octorope with that." },
+        { "prisonBoxState2_text", "It seems to have something inside." },
+        { "prisonWindow_text", "I can't reach it. I wish I had something to escape." },
 
 
 		// Documentary items
@@ -26,6 +27,9 @@ public class MessageUI : MonoBehaviour
 		{ "SCENE_ITEM_DESCRIPTION_TIGER_DISTRACTED", "The tiger has fallen asleep after eating that steak." },
 		{ "SCENE_ITEM_DESCRIPTION_TIGER_CAGED", "I can't believe I've been able to cage that beast!" },
 		{ "SCENE_ITEM_INTERACT_TIGER_NO", "'Hey kitty, kitty, kitty!'" },
+
+		// Game items
+		{ "SCENE_ITEM_DESCRIPTION_KNIFE", "A shiny sharp knife." },
 	};
 
 	public float m_timePerCharacter = 0.2f;

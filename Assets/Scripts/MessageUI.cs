@@ -7,6 +7,9 @@ public class MessageUI : MonoBehaviour
 {
 	public Dictionary<string, string> m_translations = new Dictionary<string, string>()
 	{
+		{ "Sample original text 1", "Sample translated text 1" },
+		{ "Sample original text 2", "Sample translated text 2" },
+		{ "Sample original text 3", "Sample translated text 3" },
 	};
 
 	public float m_timePerCharacter = 0.2f;

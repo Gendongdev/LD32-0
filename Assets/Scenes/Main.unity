@@ -914,12 +914,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 565323395}
   m_Layer: 0
-  m_Name: Cartoons
+  m_Name: Pirates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &565323395
 Transform:
   m_ObjectHideFlags: 0
@@ -1962,7 +1962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1173970930
 Transform:
   m_ObjectHideFlags: 0

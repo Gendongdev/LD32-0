@@ -8,19 +8,29 @@ public class PirateSceneItem : SceneItem {
 		if (m_state == 0)
 		{
 			// Initial State
-			if (item is TigerInventoryItem)
-			{
-				++m_state;
-				// Activates the canyon
-				m_ItemToActivate.state++;
+            if (item is TigerInventoryItem)
+            {
 
-				// TODO
-				// Play animation for loving the kitten
-			}
+                // TODO
+                // Play animation for loving the kitten
+
+                base.Use(item);
+                GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
+
+                ++m_state;
+                // Activates the canyon
+                m_ItemToActivate.state++;
+            }
+            else
+            {
+                base.Use(null);
+            }
+
 		}
 		else
 		{
 			// The pirate is busy loving the kitten
+            base.Use(item);
 		}
 	}
 }

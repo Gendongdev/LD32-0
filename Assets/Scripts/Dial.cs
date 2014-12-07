@@ -12,7 +12,7 @@ public class Dial : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        _manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        _manager = GameManager.GetInstance();
 	}
 
     public void MoveDialLeft()

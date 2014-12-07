@@ -60,6 +60,7 @@ public class InventoryMenu : MonoBehaviour
 	public void ToggleExpanded()
 	{
 		Expanded = !Expanded;
+        GameManager.GetInstance().GetComponent<Cursor>().m_capturerUI.enabled = Expanded;
 	}
 
 	public void SlotClicked(Button slot)

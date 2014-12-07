@@ -26,6 +26,19 @@ public class MessageUI : MonoBehaviour
 		{ "SCENE_ITEM_DESCRIPTION_TIGER_DISTRACTED", "The tiger has fallen asleep after eating that steak." },
 		{ "SCENE_ITEM_DESCRIPTION_TIGER_CAGED", "I can't believe I've been able to cage that beast!" },
 		{ "SCENE_ITEM_INTERACT_TIGER_NO", "'Hey kitty, kitty, kitty!'" },
+
+
+        // Pirate scene
+        { "song_text", "Yo ho, yo ho, a pirate's life for me"},
+        { "lookPirate_text", "He seems very aware of the canyon"},
+        { "lookPirateSing_text", "The pirate is singing"},
+        { "lookLoveCat_text", "He will be entertaining a good time"},
+        { "pirate_text", "Ey! What do you do here?"},
+        { "cat_text", "I love cats"},
+        { "inside_text", "Commotion is heard inside."}, 
+        { "barrel_text", "It is a empty barrel"},
+        { "canyon_text", "The pirate is guarding the canyon. I can't catch it"},
+        { "lookCanyon_text", " It is a powerful weapon"}
 	};
 
 	public float m_timePerCharacter = 0.2f;

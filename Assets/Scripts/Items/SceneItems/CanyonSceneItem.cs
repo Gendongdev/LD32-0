@@ -9,9 +9,10 @@ public class CanyonSceneItem : SceneItem {
 		if (state == 0)
 		{
 			// The canyon is inacessible because the pirate is using it
-			MessageServer.SendMessage("I think the pirate will kill me if I try to take the canyon", Color.white);
+            MessageServer.SendMessage(m_keysInteract[state], Color.white);
 			return;
 		}
         GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_canyonInventoryPrefab);
 	}
+
 }

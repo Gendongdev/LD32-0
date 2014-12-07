@@ -82,19 +82,3 @@ public abstract class SceneItem : InteractiveItem
 	}
 }
 
-public class PickableSceneItem : SceneItem
-{
-    public GameObject m_inventoryPrefab;
-
-    protected void Pick()
-    {
-        GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_inventoryPrefab);
-        Destroy(this.gameObject);
-    }
-
-    public override void Use(InventoryItem item)
-    {
-        Pick();
-    }
-}
-

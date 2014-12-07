@@ -18,7 +18,7 @@ public class TigerSceneItem : SceneItem {
 		else if (state==1)
 		{
 			// The tiger is eating the steak
-			if (item is BarrelIventoryItem)
+			if (item is BarrelInventoryItem)
 			{
 				++state;
 				// TODO
@@ -28,7 +28,12 @@ public class TigerSceneItem : SceneItem {
 		}
 		else
 		{
-			// The tiger is in the cage
+			if(item == null)
+			{
+				Object prefab = Resources.Load("Prefabs/Tiger");
+				GameObject newItem = Instantiate(prefab) as GameObject;
+				GameManager.GetInstance().GetComponent<Inventory>().AddItem(newItem.GetComponent<InventoryItem>());
+			}
 		}
 
 		base.Use (item);

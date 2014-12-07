@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BoxSceneItem : SceneItem {
-
+public class BoxSceneItem : SceneItem
+{
 	public override void Use (InventoryItem item)
 	{
 		if (m_state == 0)

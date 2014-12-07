@@ -39,11 +39,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c858f8551429402ca9d4f02b66889a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spriteChannel1: {fileID: 21300000, guid: 4dfa7bd6c0df04f7fac0c19db15129d1, type: 3}
-  m_spriteChannel2: {fileID: 21300000, guid: 4dfa7bd6c0df04f7fac0c19db15129d1, type: 3}
-  m_spriteChannel3: {fileID: 21300000, guid: b570fa9b6a887415d8fbc7c2b321183f, type: 3}
-  m_spriteChannel4: {fileID: 21300000, guid: 4dfa7bd6c0df04f7fac0c19db15129d1, type: 3}
-  m_sprite: {fileID: 21300000, guid: 4dfa7bd6c0df04f7fac0c19db15129d1, type: 3}
+  m_spriteChannel1: {fileID: 21300000, guid: 8fe7ff4e986ac4558934e544e2c3ab42, type: 3}
+  m_spriteChannel2: {fileID: 21300000, guid: 8fe7ff4e986ac4558934e544e2c3ab42, type: 3}
+  m_spriteChannel3: {fileID: 21300000, guid: 6eef617afdc564fbe99f6cf214dd1bf3, type: 3}
+  m_spriteChannel4: {fileID: 21300000, guid: 8fe7ff4e986ac4558934e544e2c3ab42, type: 3}
+  m_sprite: {fileID: 21300000, guid: 8fe7ff4e986ac4558934e544e2c3ab42, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -10,9 +10,6 @@ public class OctopusSceneItem : PickableSceneItem {
             // Initial State
             if (item is KnifeInventoryItem)
             {
-                
-
-
                 // TODO
                 // Play animation for loving the kitten
 
@@ -26,7 +23,14 @@ public class OctopusSceneItem : PickableSceneItem {
 
                 ++m_state;
             }
-
+			else if(item == null)
+			{
+				MessageServer.SendMessage("ITEM_INTERACT_NONE", Color.white);
+			}
+			else
+			{
+				base.Use(item);
+			}
         }
         else
         {

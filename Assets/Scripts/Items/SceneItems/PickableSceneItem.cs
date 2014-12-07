@@ -9,7 +9,7 @@ public class PickableSceneItem : SceneItem
 {
     public GameObject m_inventoryPrefab;
     
-    protected void Pick(bool destroy = false)
+    protected void Pick(bool destroy = true)
     {
         GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_inventoryPrefab);
         if (destroy)

@@ -17,9 +17,15 @@ public class MessageUI : MonoBehaviour
         { "prisonPoster_text","HE is awesome"},
         { "prisonBoxState1_text", "I think I could use an octorope with that"},
         { "prisonBoxState2_text" , "It seems to have something inside"},
-        { "prisonWindow_text", "It's too high. I need something in order to escape"}
+        { "prisonWindow_text", "It's too high. I need something in order to escape"},
 
 
+		// Documentary items
+		{ "SCENE_ITEM_DESCRIPTION_ROPE", "Looks like a liana... or a snake." },
+		{ "SCENE_ITEM_DESCRIPTION_TIGER_HUNGRY", "I'd better not approach this tiger, he looks so hungry..." },
+		{ "SCENE_ITEM_DESCRIPTION_TIGER_DISTRACTED", "The tiger has fallen asleep after eating that steak." },
+		{ "SCENE_ITEM_DESCRIPTION_TIGER_CAGED", "I can't believe I've been able to cage that beast!" },
+		{ "SCENE_ITEM_INTERACT_TIGER_NO", "'Hey kitty, kitty, kitty!'" },
 	};
 
 	public float m_timePerCharacter = 0.2f;

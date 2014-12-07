@@ -5,37 +5,25 @@ public class TigerSceneItem : PickableSceneItem {
 
 	public override void Use (InventoryItem item)
 	{
-		if (state == 0)
+		if(item == null && state < 2)
 		{
-			// The tiger is hungry
-			if (item is SteakInventoryItem)
-			{
-				++state;
-                ChangeSprite();
-				// TODO
-				// animation
-			}
+			MessageServer.SendMessage("SCENE_ITEM_INTERACT_TIGER_NO", Color.white);
 		}
-		else if (state==1)
+		else if(item is SteakInventoryItem && state == 0)
 		{
-			// The tiger is eating the steak
-			if (item is BarrelInventoryItem)
-			{
-				++state;
-                ChangeSprite();
-				// TODO
-				// Animation
-				// Change sprite
-			}
+			state = 1;
+			// TODO Show animation of the tiger eating the steak and falling asleep
+			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
+		}
+		else if(item is BarrelInventoryItem && state == 1)
+		{
+			state = 2;
+			// TODO Show animation caging the tiger
+			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 		}
 		else
 		{
-			if(item == null)
-			{
-				GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_inventoryPrefab);
-			}
+			base.Use(item);
 		}
-
-		base.Use (item);
 	}
 }

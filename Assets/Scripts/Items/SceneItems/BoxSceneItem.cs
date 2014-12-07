@@ -13,7 +13,6 @@ public class BoxSceneItem : PickableSceneItem
 				// TODO
 				// play animation
                 GetComponent<Animator>().SetTrigger("Fall");
-                GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 			}
             else
             {

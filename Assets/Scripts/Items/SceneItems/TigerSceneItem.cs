@@ -20,6 +20,10 @@ public class TigerSceneItem : PickableSceneItem {
 			state = 2;
 			// TODO Show animation caging the tiger
 			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
+			GetComponent<SpriteRenderer>().sprite = m_sprites[state];
+			transform.localPosition = new Vector3(-492, -223, 0);
+			Destroy(GetComponent<BoxCollider2D>());
+			gameObject.AddComponent<BoxCollider2D>();
 		}
 		else
 		{

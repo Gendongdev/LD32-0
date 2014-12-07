@@ -3198,7 +3198,10 @@ MonoBehaviour:
   - SCENE_ITEM_DESCRIPTION_TIGER_CAGED
   m_keysInteract: []
   m_keysCombine: []
-  m_sprites: []
+  m_sprites:
+  - {fileID: 21300000, guid: b395557643690451582bf8df8b91386e, type: 3}
+  - {fileID: 21300000, guid: b395557643690451582bf8df8b91386e, type: 3}
+  - {fileID: 21300000, guid: e1a93a03e5fe24ce58834845003e8704, type: 3}
   m_ItemToActivate: {fileID: 0}
   m_inventoryPrefab: {fileID: 100000, guid: 05eba8c0b75c5c845a4997b4302f10ce, type: 2}
 --- !u!212 &1156952260
@@ -4296,6 +4299,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 78c3f42defe25404095afe20a0087387, type: 2}
+      propertyPath: m_sprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 78c3f42defe25404095afe20a0087387, type: 2}
       propertyPath: m_LocalPosition.x
       value: 489.742401
@@ -4332,6 +4339,26 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 78c3f42defe25404095afe20a0087387, type: 2}
+      propertyPath: m_sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: b395557643690451582bf8df8b91386e,
+        type: 3}
+    - target: {fileID: 11400000, guid: 78c3f42defe25404095afe20a0087387, type: 2}
+      propertyPath: m_sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: b395557643690451582bf8df8b91386e,
+        type: 3}
+    - target: {fileID: 11400000, guid: 78c3f42defe25404095afe20a0087387, type: 2}
+      propertyPath: m_sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: e1a93a03e5fe24ce58834845003e8704,
+        type: 3}
+    - target: {fileID: 21200002, guid: 78c3f42defe25404095afe20a0087387, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b395557643690451582bf8df8b91386e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78c3f42defe25404095afe20a0087387, type: 2}
   m_RootGameObject: {fileID: 718399010}
@@ -4524,6 +4551,10 @@ Prefab:
     - target: {fileID: 400006, guid: 567e01e8b50f84b86bc8b63a6506fb59, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 567e01e8b50f84b86bc8b63a6506fb59, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 567e01e8b50f84b86bc8b63a6506fb59, type: 2}

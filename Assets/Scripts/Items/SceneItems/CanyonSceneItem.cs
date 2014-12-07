@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CanyonSceneItem : SceneItem {
 
+    public GameObject m_canyonInventoryPrefab;
 	public override void Use (InventoryItem item)
 	{
 		if (state == 0)
@@ -11,8 +12,6 @@ public class CanyonSceneItem : SceneItem {
 			MessageServer.SendMessage("I think the pirate will kill me if I try to take the canyon", Color.white);
 			return;
 		}
-		Object prefab = Resources.Load("Prefabs/Canyon");
-		GameObject canyon = Instantiate(prefab) as GameObject;
-		GameManager.GetInstance().GetComponent<Inventory>().AddItem(canyon.GetComponent<InventoryItem>());
+        GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_canyonInventoryPrefab);
 	}
 }

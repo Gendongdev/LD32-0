@@ -45,6 +45,7 @@ public abstract class InventoryItem : InteractiveItem
 
 public abstract class SceneItem : InteractiveItem
 {
+    public string[] m_messageKeys;
 	protected int m_state;
 	public int state
 	{
@@ -73,6 +74,27 @@ public abstract class SceneItem : InteractiveItem
 
 	public virtual void Look()
 	{
-		MessageServer.SendMessage ("What is this? I don't even.", Color.white);
+        if (m_messageKeys != null && m_messageKeys.Length > state )
+            MessageServer.SendMessage(m_messageKeys[state],Color.white);
+        else
+            // Default message
+            MessageServer.SendMessage ("What is this? I don't even.", Color.white);
 	}
 }
+
+public class PickableSceneItem : SceneItem
+{
+    public GameObject m_inventoryPrefab;
+
+    protected void Pick()
+    {
+        GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_inventoryPrefab);
+        Destroy(this.gameObject);
+    }
+
+    public override void Use(InventoryItem item)
+    {
+        Pick();
+    }
+}
+

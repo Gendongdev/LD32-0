@@ -39,11 +39,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074ff9d14be4ae64899fb4f079aa6aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spriteChannel1: {fileID: 0}
-  m_spriteChannel2: {fileID: 0}
-  m_spriteChannel3: {fileID: 0}
-  m_spriteChannel4: {fileID: 0}
-  m_sprite: {fileID: 0}
+  m_spriteChannel1: {fileID: 21300000, guid: c597d56156b60420f9d4f888fa5aa78b, type: 3}
+  m_spriteChannel2: {fileID: 21300000, guid: c597d56156b60420f9d4f888fa5aa78b, type: 3}
+  m_spriteChannel3: {fileID: 21300000, guid: c597d56156b60420f9d4f888fa5aa78b, type: 3}
+  m_spriteChannel4: {fileID: 21300000, guid: c597d56156b60420f9d4f888fa5aa78b, type: 3}
+  m_sprite: {fileID: 21300000, guid: c597d56156b60420f9d4f888fa5aa78b, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

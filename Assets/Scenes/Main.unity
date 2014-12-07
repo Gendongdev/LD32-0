@@ -1249,6 +1249,68 @@ RectTransform:
   m_AnchoredPosition: {x: 15, y: 0}
   m_SizeDelta: {x: 385, y: 100}
   m_Pivot: {x: 0, y: .5}
+--- !u!1 &843772042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 843772044}
+  - 60: {fileID: 843772043}
+  - 114: {fileID: 843772045}
+  m_Layer: 0
+  m_Name: Prison_Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &843772043
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843772042}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: -.759403229, y: .547974348}
+      - {x: -.719268084, y: .158811212}
+      - {x: -.172877312, y: .152987719}
+      - {x: .192071199, y: .540915787}
+      - {x: 3.34243393, y: .542276263}
+      - {x: 4.99329185, y: .526557088}
+      - {x: 4.99966908, y: -.0348584652}
+      - {x: 5.04156303, y: -1.03446066}
+      - {x: .566920996, y: -1.01765954}
+      - {x: -2.77853012, y: -.996794581}
+      - {x: -1.34883904, y: .562151432}
+--- !u!4 &843772044
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843772042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.27420139, y: -1.43950737, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 902278999}
+  m_RootOrder: 7
+--- !u!114 &843772045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843772042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f47e28a1ccf904fbab11163635c30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &848332958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1458,7 @@ Transform:
   - {fileID: 73713375}
   - {fileID: 1362366819}
   - {fileID: 1603015716}
+  - {fileID: 843772044}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1 &934530168
@@ -1522,6 +1585,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 951811826}
   - 212: {fileID: 951811825}
+  - 114: {fileID: 951811827}
+  - 95: {fileID: 951811828}
   m_Layer: 0
   m_Name: Guy
   m_TagString: Untagged
@@ -1558,11 +1623,38 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 951811824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .82099998, y: -.755999982, z: 0}
+  m_LocalPosition: {x: .82099998, y: -1.07000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &951811827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951811824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba6a31536cfb4d4ba1567b06853b3a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speed: 3
+--- !u!95 &951811828
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951811824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7dd6de93a5f7a4099b46e87a94676a2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &981823890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,6 +1771,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_description: 
+  m_spriteChannel1: {fileID: 0}
+  m_spriteChannel2: {fileID: 0}
+  m_spriteChannel3: {fileID: 0}
+  m_spriteChannel4: {fileID: 0}
   m_sprite: {fileID: 0}
 --- !u!1 &1149437068
 GameObject:
@@ -2565,8 +2661,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_description: 
+  m_spriteChannel1: {fileID: 0}
+  m_spriteChannel2: {fileID: 0}
+  m_spriteChannel3: {fileID: 0}
+  m_spriteChannel4: {fileID: 0}
   m_sprite: {fileID: 0}
-  m_octoropeItem: {fileID: 1043600175}
 --- !u!1 &1906147463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,6 +2767,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_description: 
+  m_spriteChannel1: {fileID: 0}
+  m_spriteChannel2: {fileID: 0}
+  m_spriteChannel3: {fileID: 0}
+  m_spriteChannel4: {fileID: 0}
   m_sprite: {fileID: 0}
 --- !u!1 &1995109474
 GameObject:

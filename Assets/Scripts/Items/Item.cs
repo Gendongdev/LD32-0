@@ -45,7 +45,10 @@ public abstract class InventoryItem : InteractiveItem
 
 public abstract class SceneItem : InteractiveItem
 {
-    public string[] m_messageKeys;
+    public string[] m_keysLook;
+	public string[] m_keysInteract;
+	public string[] m_keysCombine;
+
 	protected int m_state;
 	public int state
 	{
@@ -74,11 +77,41 @@ public abstract class SceneItem : InteractiveItem
 
 	public virtual void Look()
 	{
-        if (m_messageKeys != null && m_messageKeys.Length > state )
-            MessageServer.SendMessage(m_messageKeys[state],Color.white);
+		if (m_keysLook != null && m_keysLook.Length > state)
+		{
+			MessageServer.SendMessage(m_keysLook[state], Color.white);
+		}
         else
+		{
             // Default message
-            MessageServer.SendMessage ("What is this? I don't even.", Color.white);
+            MessageServer.SendMessage("What is this? I don't even.", Color.white);
+		}
+	}
+
+	public override void Use (InventoryItem item)
+	{
+		if(item == null)
+		{
+			if(m_keysInteract != null && m_keysInteract.Length > state)
+			{
+				MessageServer.SendMessage(m_keysInteract[state], Color.white);
+			}
+			else
+			{
+				base.Use(item);
+			}
+		}
+		else
+		{
+			if(m_keysCombine != null && m_keysCombine.Length > state)
+			{
+				MessageServer.SendMessage(m_keysCombine[state], Color.white);
+			}
+			else
+			{
+				base.Use(item);
+			}
+		}
 	}
 }
 

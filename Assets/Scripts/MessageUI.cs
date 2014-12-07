@@ -35,6 +35,7 @@ public class MessageUI : MonoBehaviour
 	};
 
 	public float m_timePerCharacter = 0.2f;
+	public Image m_background;
 
 	private float m_timeRemaining;
 	private Text m_text;
@@ -62,7 +63,7 @@ public class MessageUI : MonoBehaviour
 		}
 		else
 		{
-			Debug.Log("Untranslated message: " + message);
+			Debug.LogWarning("Untranslated message: " + message);
 		}
 
 		m_text.text = message;
@@ -80,5 +81,7 @@ public class MessageUI : MonoBehaviour
 				m_text.text = string.Empty;
 			}
 		}
+
+		m_background.canvasRenderer.SetAlpha (m_text.text == string.Empty ? 0 : 100);
 	}
 }

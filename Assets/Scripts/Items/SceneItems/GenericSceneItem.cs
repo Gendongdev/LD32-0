@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GenericSceneItem : SceneItem {
-    public string m_keyMessage;
+    public string m_keyMessageLook;
 
     public override void Use(InventoryItem item)
     {
@@ -10,7 +10,7 @@ public class GenericSceneItem : SceneItem {
     }
     public override void Look()
     {
-        MessageServer.SendMessage(m_keyMessage,Color.white);
+        MessageServer.SendMessage(m_keyMessageLook,Color.white);
     }
 
 }

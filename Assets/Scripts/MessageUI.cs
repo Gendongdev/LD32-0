@@ -10,7 +10,12 @@ public class MessageUI : MonoBehaviour
 		{ "Sample original text 1", "Sample translated text 1" },
 		{ "Sample original text 2", "Sample translated text 2" },
 		{ "Sample original text 3", "Sample translated text 3" },
-        { "archiver_text", "This archiver is awesome" },
+        { "prisonArchiver_text", "This archiver is awesome" },
+        { "prisonDoor_text","I think I could not open this door"},
+        { "prisonPoster_text","HE is awesome"},
+        { "prisonBoxState1_text", "I think I could use an octorope with that"},
+        { "prisonBoxState2_text" , "It seems to have something inside"},
+        { "prisonWindow_text", "It's too high. I need something in order to escape"}
 
 	};
 

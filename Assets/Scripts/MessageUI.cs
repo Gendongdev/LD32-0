@@ -21,6 +21,10 @@ public class MessageUI : MonoBehaviour
         { "prisonBoxState1_text", "I think I could use an octorope with that." },
         { "prisonBoxState2_text", "It seems to have something inside." },
         { "prisonWindow_text", "I can't reach it. I wish I had something to escape." },
+        { "prisonHole_text", "It looked like a hole but they are just 4 pixels"},
+        { "prisonHoleInteract_text", "I can improved the Wii resolution by 200% if I add these pixels" },
+        { "prisonBed_text", "Looks like something dirty was done there"},
+        { "prisonBedInteract_text", "I don't want to sleep know, I must escape from here" },
 
 
 		// Documentary items

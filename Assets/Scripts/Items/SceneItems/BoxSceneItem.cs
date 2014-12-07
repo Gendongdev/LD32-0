@@ -13,6 +13,10 @@ public class BoxSceneItem : SceneItem
 				// TODO
 				// play animation
 			}
+            else
+            {
+                base.Use(item);
+            }
 		}
 		else
 		{

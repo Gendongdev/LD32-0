@@ -9,8 +9,7 @@ public abstract class InteractiveItem : MonoBehaviour
 	/// <param name="item">Item to use with this item</param>
 	public virtual void Use(InventoryItem item)
 	{
-
-		MessageServer.SendMessage ("I don't know what to do with that", Color.white);
+		MessageServer.SendMessage ("ITEM_INTERACT_NONE", Color.white);
 	}
 }
 
@@ -84,7 +83,7 @@ public abstract class SceneItem : InteractiveItem
         else
 		{
             // Default message
-            MessageServer.SendMessage("What is this? I don't even.", Color.white);
+			MessageServer.SendMessage("SCENE_ITEM_DESCRIPTION_NONE", Color.white);
 		}
 	}
 

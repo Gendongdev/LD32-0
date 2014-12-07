@@ -44,22 +44,22 @@ public class InventoryMenu : MonoBehaviour
 	{
 		slot.image.sprite = item.m_sprite;
 
-		// TODO Change texture to that of the item
-		if(item == m_cursorManager.Item)
-			slot.image.color = Color.green; // FIXME Test
+		if(m_cursorManager.Item == null || item == m_cursorManager.Item)
+			slot.image.color = Color.white;
 		else
-			slot.image.color = Color.red; // FIXME Test
+			slot.image.color = Color.gray;
 	}
 
 	private void ClearSlot(Button slot)
 	{
-		// TODO Change texture to empty slot
-		slot.image.color = Color.blue; // FIXME Test
+		slot.image.color = Color.black;
+		slot.image.sprite = null;
 	}
 
 	public void ToggleExpanded()
 	{
 		Expanded = !Expanded;
+        GameManager.GetInstance().GetComponent<Cursor>().m_capturerUI.enabled = Expanded;
 	}
 
 	public void SlotClicked(Button slot)

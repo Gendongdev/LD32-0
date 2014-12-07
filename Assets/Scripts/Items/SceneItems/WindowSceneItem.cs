@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WindowSceneItem : InteractiveItem {
+public class WindowSceneItem : SceneItem {
     public override void Use(InventoryItem item)
     {
         if (item is JetpackInventoryItem)
@@ -15,4 +15,5 @@ public class WindowSceneItem : InteractiveItem {
             base.Use(item);
         }
     }
+
 }

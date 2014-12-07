@@ -387,9 +387,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a3fee8f3994454aba13ff2c0c11a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_messageKeys:
+  m_keysLook:
   - prisonBoxState1_text
   - prisonBoxState2_text
+  m_keysInteract: []
+  m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
 --- !u!114 &11400002
@@ -403,10 +405,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd483b17a7cda4257967f12bb24b3c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_messageKeys: []
+  m_keysLook:
+  - prisonPoster_text
+  m_keysInteract: []
+  m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
-  m_keyMessageLook: prisonPoster_text
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -418,10 +422,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd483b17a7cda4257967f12bb24b3c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_messageKeys: []
+  m_keysLook:
+  - prisonDoor_text
+  m_keysInteract:
+  - prisonDoorInteract_text
+  m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
-  m_keyMessageLook: 
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -433,10 +440,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd483b17a7cda4257967f12bb24b3c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_messageKeys: []
+  m_keysLook:
+  - prisonDoor_text
+  m_keysInteract:
+  - prisonDoorInteract_text
+  m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
-  m_keyMessageLook: prisonDoor_text
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -448,6 +458,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65abb1bbaaab74130a1d78a7c7eec18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_keysLook:
+  - prisonWindow_text
+  m_keysInteract: []
+  m_keysCombine: []
+  m_sprites: []
+  m_ItemToActivate: {fileID: 0}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -459,10 +475,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd483b17a7cda4257967f12bb24b3c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_messageKeys: []
+  m_keysLook:
+  - prisonArchiver_text
+  m_keysInteract:
+  - prisonArchiverInteract_text
+  m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
-  m_keyMessageLook: prisonArchiver_text
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1

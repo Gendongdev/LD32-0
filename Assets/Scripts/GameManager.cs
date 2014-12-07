@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour {
             _currenChannel = 0;
 
         Channels[_currenChannel].SetActive(true);
+        GetComponent<Inventory>().ChangeChannel(_currenChannel);
 
     }
 }

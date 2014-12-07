@@ -43,6 +43,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200002}
+  - 61: {fileID: 6100008}
+  - 114: {fileID: 11400010}
   m_Layer: 8
   m_Name: Pirates_Octopus
   m_TagString: Untagged
@@ -134,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &100016
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +149,22 @@ GameObject:
   - 114: {fileID: 11400008}
   m_Layer: 8
   m_Name: Pirates_Hatch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100018
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400018}
+  - 212: {fileID: 21200012}
+  m_Layer: 8
+  m_Name: grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,7 +203,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.997589111, y: -.0832061768, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 400018}
   m_Father: {fileID: 400014}
   m_RootOrder: 4
 --- !u!4 &400006
@@ -268,6 +287,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400014}
   m_RootOrder: 7
+--- !u!4 &400018
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 0
 --- !u!60 &6000000
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -344,6 +375,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .600000024, y: .639999986}
   m_Center: {x: 0, y: 0}
+--- !u!61 &6100008
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 2.48000002, y: 1.24000001}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -357,12 +399,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_keysLook:
   - lookCanyon_text
+  - lookGetCanyon_text
   m_keysInteract:
   - canyon_text
   m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
-  m_canyonInventoryPrefab: {fileID: 0}
+  m_inventoryPrefab: {fileID: 100000, guid: a8df84cccb091a04b870a2bfef9449ad, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -398,9 +441,10 @@ MonoBehaviour:
   m_keysInteract:
   - pirate_text
   - cat_text
-  m_keysCombine: []
+  m_keysCombine:
+  - cat_text
   m_sprites: []
-  m_ItemToActivate: {fileID: 0}
+  m_ItemToActivate: {fileID: 11400000}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -436,6 +480,26 @@ MonoBehaviour:
   m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a984af6f2fc20124e92eeeaf957e39e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keysLook:
+  - lookGrid_text
+  - lookOctopus_text
+  m_keysInteract: []
+  m_keysCombine:
+  - grid_text
+  m_sprites: []
+  m_ItemToActivate: {fileID: 0}
+  m_inventoryPrefab: {fileID: 100000, guid: c4e4f99992979449896e8544945a6090, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -567,6 +631,28 @@ SpriteRenderer:
   m_SortingLayerID: 2640402779
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d035588e47f474e58ac70d3af581862a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!212 &21200012
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 3675945785
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 3ec0759a267434c57816cc324d1dc7e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

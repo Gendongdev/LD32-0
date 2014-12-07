@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CanyonSceneItem : SceneItem {
+public class CanyonSceneItem : PickableSceneItem {
 
-    public GameObject m_canyonInventoryPrefab;
 	public override void Use (InventoryItem item)
 	{
 		if (state == 0)
@@ -12,7 +11,7 @@ public class CanyonSceneItem : SceneItem {
             MessageServer.SendMessage(m_keysInteract[state], Color.white);
 			return;
 		}
-        GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_canyonInventoryPrefab);
+        base.Use(item);
 	}
 
 }

@@ -38,7 +38,11 @@ public class MessageUI : MonoBehaviour
         { "inside_text", "Commotion is heard inside."}, 
         { "barrel_text", "It is a empty barrel"},
         { "canyon_text", "The pirate is guarding the canyon. I can't catch it"},
-        { "lookCanyon_text", " It is a powerful weapon"}
+        { "lookCanyon_text", " It is a powerful weapon"},
+        { "lookGrid_text", "There are a lot of fish inside"},
+        { "lookOctopus_text", "Perhaps could manufacture a octorope with it"},
+        { "grid_text", "I search on the grid"},
+        { "lookGetCanyon_text", "Nobody watches it"}
 	};
 
 	public float m_timePerCharacter = 0.2f;

@@ -24,7 +24,9 @@ public class MessageUI : MonoBehaviour
         { "prisonHole_text", "It looked like a hole but they are just 4 pixels"},
         { "prisonHoleInteract_text", "I can improved the Wii resolution by 200% if I add these pixels" },
         { "prisonBed_text", "Looks like something dirty was done there"},
-        { "prisonBedInteract_text", "I don't want to sleep know, I must escape from here" },
+        { "prisonBedInteract_text", "I don't want to sleep now, I must escape from here" },
+        { "prisonSubArchiver_text", "It is empty of PS-Vita games as is normal" },
+
 
 
 		// Documentary items
@@ -51,7 +53,7 @@ public class MessageUI : MonoBehaviour
         { "lookGrid_text", "There are a lot of fish inside"},
         { "lookOctopus_text", "Perhaps could manufacture a octorope with it"},
         { "grid_text", "I search on the grid"},
-        { "lookGetCanyon_text", "Nobody watches it"}
+        { "lookGetCanyon_text", "Nobody watches it"},
 
 	};
 

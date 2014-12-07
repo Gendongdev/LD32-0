@@ -26,14 +26,22 @@ public class GameManager : MonoBehaviour {
 
     public void UpdateDials()
     {
+
+        int newChannel = 0;
         Channels[_currenChannel].SetActive(false);
 
         if (InputDial.Selector == 0)
-            _currenChannel = ChannelDial.Selector + 1;
+            newChannel = ChannelDial.Selector + 1;
         else
-            _currenChannel = 0;
+            newChannel = 0;
 
-        Channels[_currenChannel].SetActive(true);
+        if (newChannel != _currenChannel)
+        {
+            Channels[_currenChannel].SetActive(false);
+            _currenChannel = newChannel;
+            Channels[_currenChannel].SetActive(true);
+        }
+
         GetComponent<Inventory>().ChangeChannel(_currenChannel);
 
     }

@@ -6,9 +6,11 @@ public class WindowSceneItem : SceneItem {
     {
         if (item is JetpackInventoryItem)
         {
-            // TODO
-            // The end
+            Credits credits;
 
+            credits = GameObject.FindWithTag("Credits").GetComponent<Credits>();
+
+            credits.Roll();
         }
         else
         {

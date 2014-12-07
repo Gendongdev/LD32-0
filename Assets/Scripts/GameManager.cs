@@ -28,7 +28,6 @@ public class GameManager : MonoBehaviour {
     {
 
         int newChannel = 0;
-        Channels[_currenChannel].SetActive(false);
 
         if (InputDial.Selector == 0)
             newChannel = ChannelDial.Selector + 1;

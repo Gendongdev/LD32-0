@@ -7,9 +7,9 @@ public abstract class InteractiveItem : MonoBehaviour
 
 
 	/// <summary>
-	/// Prints default message: I don't know what to do with that.
+	/// Use with null is take the object. Use with a parameter is use the item with it
 	/// </summary>
-	/// <param name="item">Item.</param>
+	/// <param name="item">Item to use with this item</param>
 	public virtual void Use(InventoryItem item)
 	{
 

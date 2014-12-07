@@ -47,7 +47,8 @@ public class MessageUI : MonoBehaviour
         { "lookGrid_text", "There are a lot of fish inside"},
         { "lookOctopus_text", "Perhaps could manufacture a octorope with it"},
         { "grid_text", "I search on the grid"},
-        { "lookGetCanyon_text", "Nobody watches it"}
+        { "lookGetCanyon_text", "Nobody watches it"},
+        { "prisonSubArchiver_text", "It is empty of PS-Vita games as is normal" },
 
 	};
 

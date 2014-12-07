@@ -35,5 +35,14 @@ public class Inventory : MonoBehaviour
 	public void RemoveItem(InventoryItem item)
 	{
 		m_items = m_items.Where (i => i != item).ToArray ();
+        Destroy (item.gameObject);
 	}
+
+    public void ChangeChannel(int channel)
+    {
+        foreach (InventoryItem item in m_items)
+        {
+            item.ChangeChannel(channel);
+        }
+    }
 }

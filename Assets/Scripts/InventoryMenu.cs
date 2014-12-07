@@ -54,6 +54,7 @@ public class InventoryMenu : MonoBehaviour
 	private void ClearSlot(Button slot)
 	{
 		// TODO Change texture to empty slot
+        slot.image.sprite = null;
 		slot.image.color = Color.blue; // FIXME Test
 	}
 

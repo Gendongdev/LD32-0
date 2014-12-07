@@ -26,6 +26,7 @@ public class MessageUI : MonoBehaviour
         { "prisonBed_text", "Looks like something dirty was done there"},
         { "prisonBedInteract_text", "I don't want to sleep now, I must escape from here" },
         { "prisonSubArchiver_text", "It is empty of PS-Vita games as is normal" },
+        { "prisonBoxInteract_text", "I can't reach it"},
 
 
 

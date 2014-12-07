@@ -14,9 +14,13 @@ public class BoxSceneItem : PickableSceneItem
 				// play animation
                 GetComponent<Animator>().SetTrigger("Fall");
 			}
-            else
+            else if (item != null)
             {
                 base.Use(item);
+            }
+            else
+            {
+                MessageServer.SendMessage(m_keysInteract[state],Color.white);
             }
 		}
 		else

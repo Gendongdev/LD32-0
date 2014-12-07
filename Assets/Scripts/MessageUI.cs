@@ -21,6 +21,12 @@ public class MessageUI : MonoBehaviour
         { "prisonBoxState1_text", "I think I could use an octorope with that." },
         { "prisonBoxState2_text", "It seems to have something inside." },
         { "prisonWindow_text", "I can't reach it. I wish I had something to escape." },
+        { "prisonHole_text", "It looked like a hole but they are just 4 pixels"},
+        { "prisonHoleInteract_text", "I can improved the Wii resolution by 200% if I add these pixels" },
+        { "prisonBed_text", "Looks like something dirty was done there"},
+        { "prisonBedInteract_text", "I don't want to sleep now, I must escape from here" },
+        { "prisonSubArchiver_text", "It is empty of PS-Vita games as is normal" },
+
 
 
 		// Documentary items
@@ -40,6 +46,21 @@ public class MessageUI : MonoBehaviour
 		{ "SCENE_ITEM_INTERACT_BOSS_DEAD", "I'll take his jetpack." },
 		{ "SCENE_ITEM_INTERACT_BOSS_NO_LIGHTER", "I need something to fire the cannon." },
 
+        // Pirate scene
+        { "song_text", "Yo ho, yo ho, a pirate's life for me"},
+        { "lookPirate_text", "He seems very aware of the canyon"},
+        { "lookPirateSing_text", "The pirate is singing"},
+        { "lookLoveCat_text", "He will be entertaining a good time"},
+        { "pirate_text", "Ey! What do you do here?"},
+        { "cat_text", "I love cats"},
+        { "inside_text", "Commotion is heard inside."}, 
+        { "barrel_text", "It is a empty barrel"},
+        { "canyon_text", "The pirate is guarding the canyon. I can't catch it"},
+        { "lookCanyon_text", " It is a powerful weapon"},
+        { "lookGrid_text", "There are a lot of fish inside"},
+        { "lookOctopus_text", "Perhaps could manufacture a octorope with it"},
+        { "grid_text", "I search on the grid"},
+        { "lookGetCanyon_text", "Nobody watches it"},
 
 	};
 

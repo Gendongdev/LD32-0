@@ -26,16 +26,16 @@ public abstract class InventoryItem : InteractiveItem
 	{
 		switch (channel)
 		{
-		case 1:
+		case 0:
 			m_sprite = m_spriteChannel1;
 			break;
-		case 2:
+		case 1:
 			m_sprite = m_spriteChannel2;
 			break;
-		case 3:
+		case 2:
 			m_sprite = m_spriteChannel3;
 			break;
-		case 4:
+		case 3:
 			m_sprite = m_spriteChannel4;
 			break;
 		}

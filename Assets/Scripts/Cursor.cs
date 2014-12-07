@@ -46,7 +46,7 @@ public class Cursor : MonoBehaviour
             {
                 hit = Physics2D.Raycast(ray.origin, ray.direction, float.PositiveInfinity, LayerMask.GetMask("Floor"));
 
-                if (hit != null && hit.transform != null)
+                if (hit.transform != null)
                 {
                     _player.Move(null, false);
                 }

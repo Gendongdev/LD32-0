@@ -7,11 +7,12 @@ public class MessageUI : MonoBehaviour
 {
 	public Dictionary<string, string> m_translations = new Dictionary<string, string>()
 	{
-		// Generic messages
-		{ "SCENE_ITEM_DESCRIPTION_NONE", "What is this? I don't even." },
-		{ "ITEM_INTERACT_NONE", "I don't know what to do with that." },
+		{ "Sample original text 1", "Sample translated text 1" },
+		{ "Sample original text 2", "Sample translated text 2" },
+		{ "Sample original text 3", "Sample translated text 3" },
 
-		// Prison items
+        // Prison
+        { "prisonSteak_text", "It's a steak. I'm hungry but it could be useful" },
         { "prisonArchiver_text", "It's full of Wii U games... Useless." },
         { "prisonArchiverInteract_text", "I can't move it." },
         { "prisonDoor_text", "A closed wooden door." },

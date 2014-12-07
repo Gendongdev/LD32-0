@@ -17,6 +17,13 @@ public class PickableSceneItem : SceneItem
     
     public override void Use(InventoryItem item)
     {
-        Pick();
+		if(item == null)
+		{
+        	Pick();
+		}
+		else
+		{
+			base.Use(item);
+		}
     }
 }

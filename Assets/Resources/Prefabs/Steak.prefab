@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Octorope
+  m_Name: Steak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,10 +36,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9f0cbd0d53fa4669a924a7a18040071, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c858f8551429402ca9d4f02b66889a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_description: 
   m_spriteChannel1: {fileID: 0}
   m_spriteChannel2: {fileID: 0}
   m_spriteChannel3: {fileID: 0}

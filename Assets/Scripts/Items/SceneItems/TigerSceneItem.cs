@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TigerSceneItem : SceneItem {
+public class TigerSceneItem : PickableSceneItem {
 
 	public override void Use (InventoryItem item)
 	{
@@ -11,6 +11,7 @@ public class TigerSceneItem : SceneItem {
 			if (item is SteakInventoryItem)
 			{
 				++state;
+                ChangeSprite();
 				// TODO
 				// animation
 			}
@@ -18,9 +19,10 @@ public class TigerSceneItem : SceneItem {
 		else if (state==1)
 		{
 			// The tiger is eating the steak
-			if (item is BarrelIventoryItem)
+			if (item is BarrelInventoryItem)
 			{
 				++state;
+                ChangeSprite();
 				// TODO
 				// Animation
 				// Change sprite
@@ -28,7 +30,10 @@ public class TigerSceneItem : SceneItem {
 		}
 		else
 		{
-			// The tiger is in the cage
+			if(item == null)
+			{
+				GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_inventoryPrefab);
+			}
 		}
 
 		base.Use (item);

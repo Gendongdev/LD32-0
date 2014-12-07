@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BoxSceneItem : SceneItem
+public class BoxSceneItem : PickableSceneItem
 {
 	public override void Use (InventoryItem item)
 	{
@@ -12,6 +12,8 @@ public class BoxSceneItem : SceneItem
 				++m_state;
 				// TODO
 				// play animation
+                GetComponent<Animator>().SetTrigger("Fall");
+                GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 			}
             else
             {
@@ -22,6 +24,7 @@ public class BoxSceneItem : SceneItem
 		{
 			// TODO 
 			// new Lighter
+            Pick(false);
 			Destroy(this);
 		}
 	}

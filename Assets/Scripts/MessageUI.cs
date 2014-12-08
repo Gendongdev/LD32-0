@@ -27,7 +27,7 @@ public class MessageUI : MonoBehaviour
         { "prisonHoleInteract_text", "I'm not going to put my hand in there." },
         { "prisonBed_text", "Looks like if a tiger had been sleeping there."},
         { "prisonBedInteract_text", "I'm not going to make the bed. I'm a tough guy." },
-        { "prisonSubArchiver_text", "It is empty of PS-Vita games as normal." },
+        { "prisonSubArchiver_text", "This is so empty as the catalog of PS Vita." },
         { "prisonBoxInteract_text", "I can't reach it."},
         { "SCENE_ITEM_INTERACT_POSTER", "I'll better leave it there, he's my inspiration." },
         { "SCENE_ITEM_INTERACT_WINDOW", "I can't reach it." },

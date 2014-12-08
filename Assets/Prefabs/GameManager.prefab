@@ -164,6 +164,7 @@ MonoBehaviour:
   m_items: []
   m_soundTake: {fileID: 8300000, guid: cfeeeffc3447045b0a8adc6754257acf, type: 3}
   m_soundCombine: {fileID: 0}
+  m_soundChangeChannel: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

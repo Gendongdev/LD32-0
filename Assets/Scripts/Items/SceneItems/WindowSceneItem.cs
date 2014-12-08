@@ -7,11 +7,9 @@ public class WindowSceneItem : SceneItem {
         if (item is JetpackInventoryItem)
         {
             item.audio.Play();
-            Credits credits;
 
-            credits = GameObject.FindWithTag("Credits").GetComponent<Credits>();
+            GameObject.Find("Prison_Octopus").GetComponent<OctoropeAnimations>().OctoropeEndAnimation();
 
-            credits.Roll();
         }
         else
         {

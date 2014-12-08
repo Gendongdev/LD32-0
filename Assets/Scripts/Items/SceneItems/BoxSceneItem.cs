@@ -12,7 +12,7 @@ public class BoxSceneItem : PickableSceneItem
 				++m_state;
 				// TODO
 				// play animation
-                GetComponent<Animator>().SetTrigger("Fall");
+                GameObject.Find("Prison_Octopus").GetComponent<OctoropeAnimations>().OctoropeBoxAnimation();
 			}
             else if (item != null)
             {
@@ -31,4 +31,9 @@ public class BoxSceneItem : PickableSceneItem
 			Destroy(this);
 		}
 	}
+
+    public void EndAnimation()
+    {
+        GameObject.Find("Prison_Octopus").GetComponent<OctoropeAnimations>().EndBoxAnimation();
+    }
 }

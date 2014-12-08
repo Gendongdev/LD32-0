@@ -51,6 +51,12 @@ public class PlayerController : MonoBehaviour {
 
 	public void Move(SceneItem item, bool use)
 	{
+        if (item == null && _cursorManager.Item != null)
+        {
+            _cursorManager.Item = null;
+            return;
+        }
+
         Vector3 scale = transform.localScale;
         _useObject = use;
         _useItem = item;

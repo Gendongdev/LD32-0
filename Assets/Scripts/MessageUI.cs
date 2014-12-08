@@ -13,7 +13,7 @@ public class MessageUI : MonoBehaviour
         { "NEW_ITEM_CHANGE_CHANNEL", "This channel has changed something in my inventory" },
 
         // Prison
-        { "PRISON_INTRO_TEXT", "Enjoy your last lunch! Ha ha ha!" },
+        { "PRISON_INTRO_TEXT", "Enjoy your last meal! Ha ha ha!" },
         { "prisonSteak_text", "It's a steak. I'm hungry but it could be useful." },
         { "prisonArchiver_text", "It's full of Wii U games... Useless." },
         { "prisonArchiverInteract_text", "I can't move it." },

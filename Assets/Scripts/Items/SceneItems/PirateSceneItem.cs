@@ -11,6 +11,7 @@ public class PirateSceneItem : SceneItem {
 			// Initial State
             if (item is TigerInventoryItem)
             {
+                audio.Play();
                 base.Use(item);
                 GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 

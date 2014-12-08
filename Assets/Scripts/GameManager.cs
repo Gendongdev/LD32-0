@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour {
 		if (m_instance != null)
 			Destroy(m_instance);
 		m_instance = this;
+
+        // Print initial message
+        MessageServer.SendMessage("You won't scape this time, and finally the Octorope will be mine!", Color.red);
 	}
 
     public void UpdateDials()

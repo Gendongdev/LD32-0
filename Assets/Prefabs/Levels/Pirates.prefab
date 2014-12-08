@@ -855,7 +855,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_keysLook:
   - inside_text
-  m_keysInteract: []
+  m_keysInteract:
+  - SCENE_ITEM_INTERACT_HATCH
   m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}

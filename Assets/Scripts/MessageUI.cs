@@ -64,6 +64,8 @@ public class MessageUI : MonoBehaviour
         { "lookOctopus_text", "Perhaps I could craft an octorope with it."},
         { "grid_text", "I've cut the net with my knife."},
         { "lookGetCanyon_text", "Nobody's guarding it anymore."},
+        { "SCENE_ITEM_INTERACT_HATCH", "It's closed." },
+        { "SCENE_ITEM_INTERACT_NET", "I could cut it open if I had something sharp." },
 
 	};
 

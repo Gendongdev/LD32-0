@@ -25,7 +25,7 @@ public class OctopusSceneItem : PickableSceneItem {
             }
 			else if(item == null)
 			{
-				MessageServer.SendMessage("ITEM_INTERACT_NONE", Color.white);
+                MessageServer.SendMessage("SCENE_ITEM_INTERACT_NET", Color.white);
 			}
 			else
 			{

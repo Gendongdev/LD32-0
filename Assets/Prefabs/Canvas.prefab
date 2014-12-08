@@ -1714,7 +1714,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Use - Right Mouse
+  m_Text: Interact - Right Mouse
 --- !u!114 &11400082
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   - 82: {fileID: 8200000}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -164,6 +165,7 @@ MonoBehaviour:
   m_items: []
   m_soundTake: {fileID: 8300000, guid: cfeeeffc3447045b0a8adc6754257acf, type: 3}
   m_soundCombine: {fileID: 0}
+  m_soundChangeChannel: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,6 +179,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_item: {fileID: 0}
   m_capturerUI: {fileID: 6100000}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2118038a8882e4f89ae2fa1233de62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  googleAnalytics: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -31,7 +31,7 @@ public class PirateSceneItem : SceneItem {
             }
             else
             {
-                base.Use(item);
+                MessageServer.SendMessage("SCENE_ITEM_PIRATE_GUARD_COMBINE_NOCAT", Color.yellow);
             }
 
 		}

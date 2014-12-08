@@ -822,6 +822,7 @@ MonoBehaviour:
   - cat_text
   m_keysCombine:
   - cat_text
+  - SCENE_ITEM_PIRATE_GUARD_COMBINE_BUSY
   m_sprites: []
   m_ItemToActivate: {fileID: 11400000}
 --- !u!114 &11400006

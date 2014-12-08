@@ -66,6 +66,10 @@ public class MessageUI : MonoBehaviour
         { "lookGetCanyon_text", "Nobody's guarding it anymore."},
         { "SCENE_ITEM_INTERACT_HATCH", "It's closed." },
         { "SCENE_ITEM_INTERACT_NET", "I could cut it open if I had something sharp." },
+        { "SCENE_ITEM_PIRATE_SINGER_COMBINE_OCTOROPE", "Wow! A homemade octorope! Cool!" },
+        { "SCENE_ITEM_PIRATE_SINGER_COMBINE_OTHER", "'I don't want that.'" },
+        { "SCENE_ITEM_PIRATE_GUARD_COMBINE_NOCAT", "'Stay away or I’ll feed thee to the sharks!'" },
+        { "SCENE_ITEM_PIRATE_GUARD_COMBINE_BUSY", "He's busy with the cat." },
 
 	};
 

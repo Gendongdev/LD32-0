@@ -11,7 +11,14 @@ public class PirateSingerSceneItem : SceneItem
         }
         else
         {
-            base.Use(item);
+            if (item is OctoropeInventoryItem)
+            {
+                MessageServer.SendMessage("SCENE_ITEM_PIRATE_SINGER_COMBINE_OCTOROPE", Color.cyan);
+            }
+            else
+            {
+                MessageServer.SendMessage("SCENE_ITEM_PIRATE_SINGER_COMBINE_OTHER", Color.cyan);
+            }
         }
     }
 }

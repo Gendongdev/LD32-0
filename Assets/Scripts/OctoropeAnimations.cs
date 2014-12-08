@@ -99,10 +99,11 @@ public class OctoropeAnimations : MonoBehaviour {
             if (_timeStartFly + 3 < Time.time)
             {
                 Credits credits;
-
                 credits = GameObject.FindWithTag("Credits").GetComponent<Credits>();
-
                 credits.Roll();
+
+                GameManager.GetInstance().m_channelIndicator.text = string.Empty;
+                GameManager.GetInstance().m_active = false;
 
                 enabled = false;
             }

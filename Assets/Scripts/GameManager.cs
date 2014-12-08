@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public Dial ChannelDial;
     public Dial InputDial;
     public UnityEngine.UI.Text m_channelIndicator;
+    public bool m_active = true;
 
     public AudioClip m_changeChannelAudio;
 
@@ -39,6 +40,9 @@ public class GameManager : MonoBehaviour {
 
     public void UpdateDials()
     {
+        if (!m_active)
+            return;
+
 
         int newChannel = 0;
 

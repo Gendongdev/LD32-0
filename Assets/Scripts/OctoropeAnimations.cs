@@ -43,6 +43,8 @@ public class OctoropeAnimations : MonoBehaviour {
             {
                 if (Vector3.Distance(transform.position, _window.transform.position) <= Vector3.Distance(_window.transform.position, transform.position + _mov))
                 {
+                    Debug.Log("End ANIM");
+                    
                     transform.parent = _box.transform;
                     _box.gameObject.GetComponent<Animator>().SetTrigger("Fall");
                     ++_state;
@@ -52,6 +54,7 @@ public class OctoropeAnimations : MonoBehaviour {
                 }
                 else
                 {
+                    Debug.Log("Octorope");
                     transform.position += _mov;
 
                 }
@@ -85,6 +88,8 @@ public class OctoropeAnimations : MonoBehaviour {
             {
                 transform.localScale *= 0.9f;
                 _player.gameObject.transform.localScale *= 0.9f;
+
+                Debug.Log("Escala");
             }
                 
             _rope.SetPosition(1, transform.position);

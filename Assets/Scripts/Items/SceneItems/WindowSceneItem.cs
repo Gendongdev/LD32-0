@@ -10,11 +10,7 @@ public class WindowSceneItem : SceneItem {
 
             GameManager.GetInstance().GetComponent<Analytics>().TrackEvent("Won");
 
-            Credits credits;
-
-            credits = GameObject.FindWithTag("Credits").GetComponent<Credits>();
-
-            credits.Roll();
+            GameObject.Find("Prison_Octopus").GetComponent<OctoropeAnimations>().OctoropeEndAnimation();
         }
         else
         {

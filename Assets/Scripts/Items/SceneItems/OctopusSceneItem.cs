@@ -12,7 +12,7 @@ public class OctopusSceneItem : PickableSceneItem {
             {
                 // TODO
                 // Play animation for loving the kitten
-
+                audio.Play();
                 base.Use(item);
                 transform.parent.gameObject.renderer.enabled = false;
 

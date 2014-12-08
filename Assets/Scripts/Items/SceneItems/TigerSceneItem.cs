@@ -7,6 +7,7 @@ public class TigerSceneItem : PickableSceneItem
 	{
 		if(item == null && state < 2)
 		{
+            audio.Play();
 			MessageServer.SendMessage("SCENE_ITEM_INTERACT_TIGER_NO", Color.white);
 		}
 		else if(item is SteakInventoryItem && state == 0)
@@ -17,6 +18,7 @@ public class TigerSceneItem : PickableSceneItem
 		}
 		else if(item is BarrelInventoryItem && state == 1)
 		{
+            audio.Play();
 			state = 2;
 			// TODO Show animation caging the tiger
 			GetComponentsInChildren<ParticleSystem>(true)[0].gameObject.SetActive(false);
@@ -31,4 +33,10 @@ public class TigerSceneItem : PickableSceneItem
 			base.Use(item);
 		}
 	}
+
+    public override void Look()
+    {
+        audio.Play();
+        base.Look();
+    }
 }

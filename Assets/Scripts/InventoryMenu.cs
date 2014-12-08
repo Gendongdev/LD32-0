@@ -58,12 +58,14 @@ public class InventoryMenu : MonoBehaviour
 
 	public void ToggleExpanded()
 	{
+        audio.Play();
 		Expanded = !Expanded;
         GameManager.GetInstance().GetComponent<Cursor>().m_capturerUI.enabled = Expanded;
 	}
 
 	public void SlotClicked(Button slot)
 	{
+        audio.Play();
 		int slotIndex;
 		for(slotIndex = 0; slotIndex < m_slots.Length; ++slotIndex)
 		{

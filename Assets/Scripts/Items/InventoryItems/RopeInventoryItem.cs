@@ -11,6 +11,7 @@ public class RopeInventoryItem : InventoryItem
 			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 			GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(this);
             GameManager.GetInstance().GetComponent<Inventory>().AddItem(m_octoropePrefab);
+            m_octoropePrefab.audio.Play();
 			return;
 		}
 

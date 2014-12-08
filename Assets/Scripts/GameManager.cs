@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour {
 
         // Print initial message
         MessageServer.SendMessage("PRISON_INTRO_TEXT", Color.green);
+
+        GetComponent<Analytics>().TrackEvent("GameStarted");
 	}
 
     public void UpdateDials()

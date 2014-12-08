@@ -7,6 +7,9 @@ public class WindowSceneItem : SceneItem {
         if (item is JetpackInventoryItem)
         {
             item.audio.Play();
+
+            GameManager.GetInstance().GetComponent<Analytics>().TrackEvent("Won");
+
             Credits credits;
 
             credits = GameObject.FindWithTag("Credits").GetComponent<Credits>();

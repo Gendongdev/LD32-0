@@ -74,6 +74,58 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &803610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+  m_PrefabInternal: {fileID: 1002841148}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 803612}
+  - 114: {fileID: 803611}
+  m_Layer: 0
+  m_Name: GAv3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &803611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: eb5b47b08880548c795ced5f38c9e001,
+    type: 2}
+  m_PrefabInternal: {fileID: 1002841148}
+  m_GameObject: {fileID: 803610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecbbe2dcdeec84fc68853eac28cc4d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  androidTrackingCode: UA-57448956-2
+  IOSTrackingCode: UA-57448956-2
+  otherTrackingCode: UA-57448956-2
+  productName: Octorope
+  bundleIdentifier: net.nwink.octorope
+  bundleVersion: 1.0
+  dispatchPeriod: 5
+  sampleFrequency: 100
+  logLevel: 3
+  anonymizeIP: 0
+  dryRun: 0
+  sessionTimeout: 1800
+--- !u!4 &803612
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+  m_PrefabInternal: {fileID: 1002841148}
+  m_GameObject: {fileID: 803610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.79012108, y: -7.8589859, z: -1.81105065}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &18360062
 GameObject:
   m_ObjectHideFlags: 0
@@ -4456,6 +4508,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 128923275}
   m_RootOrder: 4
+--- !u!1001 &1002841148
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.79012108
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.8589859
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.81105065
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: eb5b47b08880548c795ced5f38c9e001, type: 2}
+  m_RootGameObject: {fileID: 803610}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1043600173
 GameObject:
   m_ObjectHideFlags: 0
@@ -6412,6 +6508,7 @@ GameObject:
   - 114: {fileID: 1235122487}
   - 114: {fileID: 1235122486}
   - 82: {fileID: 1235122489}
+  - 114: {fileID: 1235122490}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6543,6 +6640,18 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1235122490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235122484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2118038a8882e4f89ae2fa1233de62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  googleAnalytics: {fileID: 803611}
 --- !u!1 &1251543552
 GameObject:
   m_ObjectHideFlags: 0

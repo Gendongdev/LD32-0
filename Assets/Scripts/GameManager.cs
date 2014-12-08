@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour {
     public Dial ChannelDial;
     public Dial InputDial;
 
+    public AudioClip m_changeChannelAudio;
+
 	static GameManager m_instance;
 
     private int _currenChannel = 1;
@@ -40,7 +42,8 @@ public class GameManager : MonoBehaviour {
             _currenChannel = newChannel;
             Channels[_currenChannel].SetActive(true);
         }
-
+        audio.clip = m_changeChannelAudio;
+        audio.Play();
         GetComponent<Inventory>().ChangeChannel(_currenChannel);
 
     }

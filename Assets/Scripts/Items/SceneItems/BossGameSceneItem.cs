@@ -30,7 +30,7 @@ public class BossGameSceneItem : SceneItem
 			}
 			else
 			{
-				// TODO Explosion?
+				audio.Play();
 				GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 				GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(lighter);
 				GetComponent<Animator>().SetBool("killed", true);

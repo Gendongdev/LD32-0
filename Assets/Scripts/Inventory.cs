@@ -6,6 +6,8 @@ using System.Linq;
 public class Inventory : MonoBehaviour
 {
 	public InventoryItem[] m_items;
+    public AudioClip m_soundTake;
+    public AudioClip m_soundCombine;
 
 	public void Start()
 	{
@@ -20,12 +22,20 @@ public class Inventory : MonoBehaviour
 		*/
 	}
 
+    public void PlaySoundCombine()
+    {
+        audio.clip = m_soundCombine;
+        audio.Play();
+    }
+
 	public void AddItem(GameObject prefab)
 	{
         GameObject item = Instantiate(prefab) as GameObject;
         InventoryItem ii = item.GetComponent<InventoryItem>();
 		if (!m_items.Contains(ii))
 		{
+            audio.clip = m_soundTake;
+            audio.Play();
 			List<InventoryItem> items = m_items.ToList ();
 			items.Add(ii);
 			m_items = items.ToArray();

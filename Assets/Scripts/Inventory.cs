@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
 	public InventoryItem[] m_items;
     public AudioClip m_soundTake;
     public AudioClip m_soundCombine;
+    public AudioClip m_soundChangeChannel;
 
 	public void Start()
 	{
@@ -25,6 +26,12 @@ public class Inventory : MonoBehaviour
     public void PlaySoundCombine()
     {
         audio.clip = m_soundCombine;
+        audio.Play();
+    }
+
+    public void PlaySoundChangeChannel()
+    {
+        audio.clip = m_soundChangeChannel;
         audio.Play();
     }
 

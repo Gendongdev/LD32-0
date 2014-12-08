@@ -24,6 +24,7 @@ public abstract class InventoryItem : InteractiveItem
 
 	public void ChangeChannel(int channel)
 	{
+        Sprite lastSprite = m_sprite;
 		switch (channel)
 		{
 		case 0:
@@ -39,6 +40,11 @@ public abstract class InventoryItem : InteractiveItem
 			m_sprite = m_spriteChannel4;
 			break;
 		}
+        if (lastSprite != m_sprite)
+        {
+            GameManager.GetInstance().GetComponent<Inventory>().PlaySoundChangeChannel();
+            MessageServer.SendMessage("NEW_ITEM_CHANGE_CHANNEL", Color.white);
+        }
 	}
 }
 

@@ -12,7 +12,6 @@ public class PirateSceneItem : SceneItem {
             if (item is TigerInventoryItem)
             {
                 audio.Play();
-                base.Use(item);
                 GameManager.GetInstance().GetComponent<Inventory>().RemoveItem(item);
 
                 ++m_state;
@@ -26,16 +25,26 @@ public class PirateSceneItem : SceneItem {
 
 				transform.localScale = new Vector3(-1, 1, 1);
             }
+            else if (item == null)
+            {
+                MessageServer.SendMessage("pirate_text", Color.yellow);
+            }
             else
             {
-                base.Use(null);
+                base.Use(item);
             }
 
 		}
 		else
 		{
-			// The pirate is busy loving the kitten
-            base.Use(item);
+            if (item == null)
+            {
+                MessageServer.SendMessage("cat_text", Color.yellow);
+            }
+            else
+            {
+                base.Use(item);
+            }
 		}
 	}
 }

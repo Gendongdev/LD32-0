@@ -19,7 +19,7 @@ public class OctoropeAnimations : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        _player = GameObject.Find("Guy");
+        _player = GameObject.Find("Hand");
         _window = GameObject.Find("Prison_Window");
         _box = GameObject.Find("Prison_Box");
         _rope = GetComponent<LineRenderer>();

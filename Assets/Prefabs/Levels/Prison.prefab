@@ -620,7 +620,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_keysLook:
   - prisonPoster_text
-  m_keysInteract: []
+  m_keysInteract:
+  - SCENE_ITEM_INTERACT_POSTER
   m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}
@@ -673,7 +674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_keysLook:
   - prisonWindow_text
-  m_keysInteract: []
+  m_keysInteract:
+  - SCENE_ITEM_INTERACT_WINDOW
   m_keysCombine: []
   m_sprites: []
   m_ItemToActivate: {fileID: 0}

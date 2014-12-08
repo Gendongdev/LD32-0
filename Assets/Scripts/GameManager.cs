@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
 		m_instance = this;
 
         // Print initial message
-        MessageServer.SendMessage("You won't scape this time, and finally the Octorope will be mine!", Color.red);
+        MessageServer.SendMessage("PRISON_INTRO_TEXT", Color.green);
 	}
 
     public void UpdateDials()

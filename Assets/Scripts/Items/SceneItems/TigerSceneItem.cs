@@ -21,9 +21,12 @@ public class TigerSceneItem : PickableSceneItem
 	{
 		if(item == null && state < 2)
 		{
-            audio.clip = m_hungryAudio;
-            audio.loop = false;
-            audio.Play();
+            if (state == 0)
+            {
+                audio.clip = m_hungryAudio;
+                audio.loop = false;
+                audio.Play();
+            }
 			MessageServer.SendMessage("SCENE_ITEM_INTERACT_TIGER_NO", Color.white);
 		}
 		else if(item is SteakInventoryItem && state == 0)

@@ -13,6 +13,7 @@ public class MessageUI : MonoBehaviour
         { "NEW_ITEM_CHANGE_CHANNEL", "This channel has changed something in my inventory" },
 
         // Prison
+        { "PRISON_INTRO_TEXT", "Enjoy your last lunch! Ha ha ha!" },
         { "prisonSteak_text", "It's a steak. I'm hungry but it could be useful." },
         { "prisonArchiver_text", "It's full of Wii U games... Useless." },
         { "prisonArchiverInteract_text", "I can't move it." },
@@ -21,13 +22,15 @@ public class MessageUI : MonoBehaviour
 		{ "prisonPoster_text", "HE is awesome." },
         { "prisonBoxState1_text", "I think I could use an octorope with that." },
         { "prisonBoxState2_text", "It seems to have something inside." },
-        { "prisonWindow_text", "I can't reach it. I wish I had something to escape." },
+        { "prisonWindow_text", "I wish I could fly to escape through that window." },
         { "prisonHole_text", "It looks like a hole but it's just 6 pixels."},
         { "prisonHoleInteract_text", "I'm not going to put my hand in there." },
         { "prisonBed_text", "Looks like if a tiger had been sleeping there."},
         { "prisonBedInteract_text", "I'm not going to make the bed. I'm a tough guy." },
         { "prisonSubArchiver_text", "It is empty of PS-Vita games as normal." },
         { "prisonBoxInteract_text", "I can't reach it."},
+        { "SCENE_ITEM_INTERACT_POSTER", "I'll better leave it there, he's my inspiration." },
+        { "SCENE_ITEM_INTERACT_WINDOW", "I can't reach it." },
 
 		// Documentary items
 		{ "SCENE_ITEM_DESCRIPTION_ROPE", "Looks like a liana... or a snake." },

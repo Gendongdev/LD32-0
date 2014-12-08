@@ -24,7 +24,7 @@ public class MessageUI : MonoBehaviour
         { "prisonHole_text", "It looks like a hole but it's just 6 pixels."},
         { "prisonHoleInteract_text", "I'm not going to put my hand in there." },
         { "prisonBed_text", "Looks like if a tiger had been sleeping there."},
-        { "prisonBedInteract_text", "I'm not going to make the bed. I'm a though guy." },
+        { "prisonBedInteract_text", "I'm not going to make the bed. I'm a tough guy." },
         { "prisonSubArchiver_text", "It is empty of PS-Vita games as normal." },
         { "prisonBoxInteract_text", "I can't reach it."},
 

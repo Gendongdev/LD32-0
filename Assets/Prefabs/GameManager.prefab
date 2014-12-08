@@ -147,6 +147,7 @@ MonoBehaviour:
   - {fileID: 0}
   ChannelDial: {fileID: 0}
   InputDial: {fileID: 0}
+  m_channelIndicator: {fileID: 0}
   m_changeChannelAudio: {fileID: 8300000, guid: 449ac1b4715034c69a4d27730c4ccc4f,
     type: 3}
 --- !u!114 &11400002

@@ -79,7 +79,7 @@ public class OctoropeAnimations : MonoBehaviour {
 
             if (_timeStartFly < Time.time)
             {
-                _player.transform.parent = transform;
+                _player.transform.parent.transform.parent = transform;
                 ++_state;
             }
 
@@ -88,8 +88,6 @@ public class OctoropeAnimations : MonoBehaviour {
             {
                 transform.localScale *= 0.9f;
                 _player.gameObject.transform.localScale *= 0.9f;
-
-                Debug.Log("Escala");
             }
                 
             _rope.SetPosition(1, transform.position);

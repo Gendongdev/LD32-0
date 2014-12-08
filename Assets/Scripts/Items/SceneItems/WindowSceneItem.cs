@@ -6,6 +6,7 @@ public class WindowSceneItem : SceneItem {
     {
         if (item is JetpackInventoryItem)
         {
+            item.audio.Play();
             Credits credits;
 
             credits = GameObject.FindWithTag("Credits").GetComponent<Credits>();

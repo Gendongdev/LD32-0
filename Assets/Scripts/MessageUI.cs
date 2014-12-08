@@ -10,6 +10,7 @@ public class MessageUI : MonoBehaviour
 		// Generic messages
 		{ "SCENE_ITEM_DESCRIPTION_NONE", "What is this? I don't even." },
 		{ "ITEM_INTERACT_NONE", "I don't know what to do with that." },
+        { "NEW_ITEM_CHANGE_CHANNEL", "This channel has changed something in my inventory" },
 
         // Prison
         { "prisonSteak_text", "It's a steak. I'm hungry but it could be useful." },

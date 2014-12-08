@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour {
             Vector3 dir = Vector3.zero;
             dir.x = m_positionToGo.x - transform.position.x;
             dir.Normalize();
-            Debug.Log("Direction: " + dir);
             transform.position += dir * m_speed * Time.deltaTime;
         }
         else
@@ -52,6 +51,12 @@ public class PlayerController : MonoBehaviour {
 
 	public void Move(SceneItem item, bool use)
 	{
+        if (item == null && _cursorManager.Item != null)
+        {
+            _cursorManager.Item = null;
+            return;
+        }
+
         Vector3 scale = transform.localScale;
         _useObject = use;
         _useItem = item;

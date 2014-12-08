@@ -12,7 +12,7 @@ public class MessageUI : MonoBehaviour
 		{ "ITEM_INTERACT_NONE", "I don't know what to do with that." },
 
         // Prison
-        { "prisonSteak_text", "It's a steak. I'm hungry but it could be useful" },
+        { "prisonSteak_text", "It's a steak. I'm hungry but it could be useful." },
         { "prisonArchiver_text", "It's full of Wii U games... Useless." },
         { "prisonArchiverInteract_text", "I can't move it." },
         { "prisonDoor_text", "A closed wooden door." },
@@ -21,14 +21,12 @@ public class MessageUI : MonoBehaviour
         { "prisonBoxState1_text", "I think I could use an octorope with that." },
         { "prisonBoxState2_text", "It seems to have something inside." },
         { "prisonWindow_text", "I can't reach it. I wish I had something to escape." },
-        { "prisonHole_text", "It looked like a hole but they are just 4 pixels"},
-        { "prisonHoleInteract_text", "I can improved the Wii resolution by 200% if I add these pixels" },
-        { "prisonBed_text", "Looks like something dirty was done there"},
-        { "prisonBedInteract_text", "I don't want to sleep now, I must escape from here" },
-        { "prisonSubArchiver_text", "It is empty of PS-Vita games as is normal" },
-        { "prisonBoxInteract_text", "I can't reach it"},
-
-
+        { "prisonHole_text", "It looks like a hole but it's just 6 pixels."},
+        { "prisonHoleInteract_text", "I'm not going to put my hand in there." },
+        { "prisonBed_text", "Looks like if a tiger had been sleeping there."},
+        { "prisonBedInteract_text", "I'm not going to make the bed. I'm a though guy." },
+        { "prisonSubArchiver_text", "It is empty of PS-Vita games as normal." },
+        { "prisonBoxInteract_text", "I can't reach it."},
 
 		// Documentary items
 		{ "SCENE_ITEM_DESCRIPTION_ROPE", "Looks like a liana... or a snake." },
@@ -48,20 +46,20 @@ public class MessageUI : MonoBehaviour
 		{ "SCENE_ITEM_INTERACT_BOSS_NO_LIGHTER", "I need something to fire the cannon." },
 
         // Pirate scene
-        { "song_text", "Yo ho, yo ho, a pirate's life for me"},
-        { "lookPirate_text", "He seems very aware of the canyon"},
-        { "lookPirateSing_text", "The pirate is singing"},
-        { "lookLoveCat_text", "He will be entertaining a good time"},
-        { "pirate_text", "Ey! What do you do here?"},
-        { "cat_text", "I love cats"},
-        { "inside_text", "Commotion is heard inside."}, 
-        { "barrel_text", "It is a empty barrel"},
-        { "canyon_text", "The pirate is guarding the canyon. I can't catch it"},
-        { "lookCanyon_text", " It is a powerful weapon"},
-        { "lookGrid_text", "There are a lot of fish inside"},
-        { "lookOctopus_text", "Perhaps could manufacture a octorope with it"},
-        { "grid_text", "I search on the grid"},
-        { "lookGetCanyon_text", "Nobody watches it"},
+        { "song_text", "'Yo ho, yo ho, a pirate's life for me.'"},
+        { "lookPirate_text", "He's guarding the cannon."},
+        { "lookPirateSing_text", "The pirate is singing."},
+        { "lookLoveCat_text", "He will be distracted for a while."},
+        { "pirate_text", "'Hey! What are you doing here?'"},
+        { "cat_text", "'I love cats.'"},
+        { "inside_text", "The treasure room is full of candy."}, 
+        { "barrel_text", "An empty barrel."},
+        { "canyon_text", "The pirate is guarding the cannon. I can't take it."},
+        { "lookCanyon_text", "It's a powerful weapon."},
+        { "lookGrid_text", "There's a lot of fish in the net."},
+        { "lookOctopus_text", "Perhaps I could craft an octorope with it."},
+        { "grid_text", "I've cut the net with my knife."},
+        { "lookGetCanyon_text", "Nobody's guarding it anymore."},
 
 	};
 

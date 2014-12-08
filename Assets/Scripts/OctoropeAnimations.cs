@@ -19,7 +19,7 @@ public class OctoropeAnimations : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        _player = GameObject.Find("Guy");
+        _player = GameObject.Find("Hand");
         _window = GameObject.Find("Prison_Window");
         _box = GameObject.Find("Prison_Box");
         _rope = GetComponent<LineRenderer>();
@@ -99,10 +99,11 @@ public class OctoropeAnimations : MonoBehaviour {
             if (_timeStartFly + 3 < Time.time)
             {
                 Credits credits;
-
                 credits = GameObject.FindWithTag("Credits").GetComponent<Credits>();
-
                 credits.Roll();
+
+                GameManager.GetInstance().m_channelIndicator.text = string.Empty;
+                GameManager.GetInstance().m_active = false;
 
                 enabled = false;
             }

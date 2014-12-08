@@ -32,6 +32,11 @@ public class GameManager : MonoBehaviour {
         GetComponent<Analytics>().TrackEvent("GameStarted");
 	}
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public void UpdateDials()
     {
 

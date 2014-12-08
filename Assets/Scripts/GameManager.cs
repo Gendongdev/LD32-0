@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
     public GameObject[] Channels;
     public Dial ChannelDial;
     public Dial InputDial;
+    public UnityEngine.UI.Text m_channelIndicator;
 
 	static GameManager m_instance;
 
@@ -30,9 +31,26 @@ public class GameManager : MonoBehaviour {
         int newChannel = 0;
 
         if (InputDial.Selector == 0)
+        {
             newChannel = ChannelDial.Selector + 1;
+        }            
         else
+        {
             newChannel = 0;
+        }
+
+        string indicatorText;
+
+        if (newChannel == 0)
+        {
+            indicatorText = "AV";
+        }
+        else
+        {
+            indicatorText = string.Format("CH {0}", newChannel);
+        }
+
+        m_channelIndicator.text = indicatorText;
 
         if (newChannel != _currenChannel)
         {

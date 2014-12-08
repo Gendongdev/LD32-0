@@ -3415,6 +3415,10 @@ Prefab:
       propertyPath: InputDial
       value: 
       objectReference: {fileID: 2031453384}
+    - target: {fileID: 11400000, guid: 056a55c08ef824ff797b34702a2dc620, type: 2}
+      propertyPath: m_channelIndicator
+      value: 
+      objectReference: {fileID: 1274773245}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 056a55c08ef824ff797b34702a2dc620, type: 2}
   m_RootGameObject: {fileID: 1235122484}
@@ -5864,6 +5868,7 @@ MonoBehaviour:
   - {fileID: 1967550689}
   ChannelDial: {fileID: 1311112122}
   InputDial: {fileID: 2031453384}
+  m_channelIndicator: {fileID: 1274773245}
 --- !u!1 &1266175584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5896,6 +5901,72 @@ Transform:
   - {fileID: 315611493}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &1274773243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1274773244}
+  - 222: {fileID: 1274773246}
+  - 114: {fileID: 1274773245}
+  m_Layer: 5
+  m_Name: Channel Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1274773244
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274773243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324712983}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -274.399994, y: 130}
+  m_SizeDelta: {x: 90.4000015, y: 45.7000008}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1274773245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274773243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9cb029f91da5545428a6374996eb5b6c, type: 3}
+    m_FontSize: 48
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: CH 1
+--- !u!222 &1274773246
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274773243}
 --- !u!1 &1303188403
 GameObject:
   m_ObjectHideFlags: 0
@@ -6121,6 +6192,7 @@ RectTransform:
   - {fileID: 1311112121}
   - {fileID: 2031453383}
   - {fileID: 981823891}
+  - {fileID: 1274773244}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}

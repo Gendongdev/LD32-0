@@ -28,7 +28,6 @@ public class Cursor : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
-            Debug.Log("Ray");
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, float.PositiveInfinity, LayerMask.GetMask("CapturerUI"));
             if (hit.transform != null)
@@ -39,7 +38,6 @@ public class Cursor : MonoBehaviour
             hit = Physics2D.Raycast(ray.origin, ray.direction, float.PositiveInfinity, LayerMask.GetMask("InteractiveObject"));
             if (hit.transform != null)
             {
-                Debug.Log("boxs");
                 _player.Move(hit.transform.gameObject.GetComponent<SceneItem>(), Input.GetMouseButtonDown(1) || Item != null);
             }
             else

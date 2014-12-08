@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour {
             Vector3 dir = Vector3.zero;
             dir.x = m_positionToGo.x - transform.position.x;
             dir.Normalize();
-            Debug.Log("Direction: " + dir);
             transform.position += dir * m_speed * Time.deltaTime;
         }
         else

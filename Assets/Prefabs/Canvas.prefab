@@ -77,6 +77,7 @@ GameObject:
   - 224: {fileID: 22400008}
   - 222: {fileID: 22200004}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400096}
   m_Layer: 5
   m_Name: Info
   m_TagString: Untagged
@@ -130,6 +131,7 @@ GameObject:
   - 224: {fileID: 22400014}
   - 222: {fileID: 22200010}
   - 114: {fileID: 11400020}
+  - 114: {fileID: 11400094}
   m_Layer: 5
   m_Name: Info
   m_TagString: Untagged
@@ -219,6 +221,7 @@ GameObject:
   - 224: {fileID: 22400024}
   - 222: {fileID: 22200020}
   - 114: {fileID: 11400036}
+  - 114: {fileID: 11400092}
   m_Layer: 5
   m_Name: Info
   m_TagString: Untagged
@@ -1919,6 +1922,45 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11400092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694e52c5c3e2e8847a7c2ab94d903844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spanish: "Gira para cambiar de canal\r"
+  m_English: Use dial to change channels
+--- !u!114 &11400094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694e52c5c3e2e8847a7c2ab94d903844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spanish: "Interactuar - Click derecho\r o medio"
+  m_English: Interact - Middle or Right Mouse
+--- !u!114 &11400096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694e52c5c3e2e8847a7c2ab94d903844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spanish: "Click izquierdo - Examinar\r"
+  m_English: Left Mouse - Look
 --- !u!222 &22200000
 CanvasRenderer:
   m_ObjectHideFlags: 1

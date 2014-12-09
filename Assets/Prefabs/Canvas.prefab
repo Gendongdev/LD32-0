@@ -924,7 +924,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Interact - Right Mouse
+  m_Text: Interact - Middle or Right Mouse
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2244,8 +2244,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -313, y: 25}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -348.700012, y: 25}
+  m_SizeDelta: {x: 231.399994, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22400016
 RectTransform:

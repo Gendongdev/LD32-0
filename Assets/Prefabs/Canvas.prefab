@@ -791,7 +791,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Left Mouse - Look
+  m_Text: Click izquierdo - Examinar
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -924,7 +924,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Interact - Right Mouse
+  m_Text: Interactuar - Click derecho
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1158,7 +1158,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Use dial to change channels
+  m_Text: Gira para cambiar de canal
 --- !u!114 &11400038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1407,13 +1407,13 @@ MonoBehaviour:
   m_linePrefab: {fileID: 11400004, guid: 25ec1b4b234e04030a3775369c868c38, type: 2}
   m_staff:
   - m_name: Ladislao Lainez
-    m_position: Artist/Programmer
+    m_position: Artista/Programador
   - m_name: "Guillermo Gij\xF3n"
-    m_position: Programmer
+    m_position: Programador
   - m_name: Manuel Mora
-    m_position: Programmer
+    m_position: Programador
   - m_name: "Isidro Jos\xE9 Rodr\xEDguez"
-    m_position: Programmer
+    m_position: Programador
 --- !u!114 &11400056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2190,8 +2190,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 151, y: 25}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 164, y: 25}
+  m_SizeDelta: {x: 186, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22400010
 RectTransform:
@@ -2244,8 +2244,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -313, y: 25}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -332, y: 25}
+  m_SizeDelta: {x: 198, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22400016
 RectTransform:

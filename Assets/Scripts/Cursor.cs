@@ -26,7 +26,7 @@ public class Cursor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, float.PositiveInfinity, LayerMask.GetMask("CapturerUI"));
@@ -38,7 +38,7 @@ public class Cursor : MonoBehaviour
             hit = Physics2D.Raycast(ray.origin, ray.direction, float.PositiveInfinity, LayerMask.GetMask("InteractiveObject"));
             if (hit.transform != null)
             {
-                _player.Move(hit.transform.gameObject.GetComponent<SceneItem>(), Input.GetMouseButtonDown(1) || Item != null);
+                _player.Move(hit.transform.gameObject.GetComponent<SceneItem>(), Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2) || Item != null);
             }
             else
             {
